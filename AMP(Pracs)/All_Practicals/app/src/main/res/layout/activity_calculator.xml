@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <!--TITLE-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <!--Number 1 EDIT TEXT-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="number 1"
+app:layout_constraintRight_toLeftOf="@id/mtvAdd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvCalculate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/metNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--To Word-->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        android:textSize="40dp"
+        android:id="@+id/mtvAdd"
+        app:layout_constraintEnd_toStartOf="@+id/tilNum2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tilNum1"
+        app:layout_constraintTop_toBottomOf="@id/mtvCalculate" />
+    <!--Number 1 EDIT TEXT-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/mtvAdd"
+        android:hint="number 2"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvCalculate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/metNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Calculate Button-->
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tilNum2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/mbtnCalcualte"
+        android:text="Calculate"
+        />
+
+    <!--Result-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
