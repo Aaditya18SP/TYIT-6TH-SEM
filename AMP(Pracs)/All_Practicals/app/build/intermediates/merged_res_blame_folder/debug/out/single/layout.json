@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\8.0-rc-2\\com.example.tyit_29_prac1.app-mergeDebugResources-42:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\8.0-rc-2\\com.example.tyit_29_prac1.app-main-45:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.tyit_29_prac1.app-mergeDebugResources-42:/layout/activity_calculator.xml",
+        "source": "com.example.tyit_29_prac1.app-main-45:/layout/activity_calculator.xml"
+    },
+    {
+        "merged": "com.example.tyit_29_prac1.app-mergeDebugResources-42:/layout/activity_sign_in.xml",
+        "source": "com.example.tyit_29_prac1.app-main-45:/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "com.example.tyit_29_prac1.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.example.tyit_29_prac1.app-main-45:/layout/activity_main.xml"
+    }
+]
