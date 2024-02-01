@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".CalculatorActivity">
 
     <!--TITLE-->
@@ -21,68 +22,105 @@
         app:layout_constraintTop_toTopOf="parent"
 
         />
-
-    <!--Number 1 EDIT TEXT-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilNum1"
-        android:layout_width="wrap_content"
+    <!--LINEAR LAYOUT-->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="number 1"
-app:layout_constraintRight_toLeftOf="@id/mtvAdd"
+        android:id="@+id/llNumbersAndOperators"
+        app:layout_constraintTop_toBottomOf="@id/mtvCalculate"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mtvCalculate">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/metNum1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <!--To Word-->
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="+"
-        android:textSize="40dp"
-        android:id="@+id/mtvAdd"
-        app:layout_constraintEnd_toStartOf="@+id/tilNum2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tilNum1"
-        app:layout_constraintTop_toBottomOf="@id/mtvCalculate" />
-    <!--Number 1 EDIT TEXT-->
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilNum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintLeft_toRightOf="@id/mtvAdd"
-        android:hint="number 2"
-
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mtvCalculate">
+        android:orientation="horizontal"
+        >
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/metNum2"
+        <!--Number 1 EDIT TEXT-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNum1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:hint="num 1"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            app:layout_constraintRight_toLeftOf="@id/spinnerOperator"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvCalculate">
+
+            <!-- android:layout_marginTop="20dp"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/metNum1"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--To Word-->
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:id="@+id/spinnerOperator"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/tilNum2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tilNum1"
+            app:layout_constraintTop_toBottomOf="@id/mtvCalculate"
             />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <!--
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="+"
+            android:textSize="40dp"
+            android:id="@+id/mtvAdd"
+            app:layout_constraintEnd_toStartOf="@+id/tilNum2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tilNum1"
+            app:layout_constraintTop_toBottomOf="@id/mtvCalculate" />
+            -->
+
+
+        <!--Number 2 EDIT TEXT-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@id/spinnerOperator"
+            android:hint="num 2"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvCalculate">
+<!--android:layout_marginTop="20dp"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/metNum2"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
 
     <!--Calculate Button-->
-
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tilNum2"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/llNumbersAndOperators"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/mbtnCalcualte"
@@ -90,5 +128,19 @@ app:layout_constraintRight_toLeftOf="@id/mtvAdd"
         />
 
     <!--Result-->
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mbtnCalcualte"
+        android:layout_marginTop="16dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+
+        android:id="@+id/mtvResult"
+        android:visibility="gone"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
