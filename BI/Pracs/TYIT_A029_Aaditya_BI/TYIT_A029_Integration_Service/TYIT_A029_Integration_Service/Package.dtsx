@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{AB636647-C9AC-4A1F-AEBE-BA52932849C5}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{137D2CF4-3061-42AF-9B3C-992A356667CE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,7 +33,7 @@
       DTS:ObjectName="Excel Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\Car_data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\Car_data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -43,7 +43,7 @@
       DTS:ObjectName="Excel Connection Manager 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\csv_to_excel_car_data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\csv_to_excel_car_data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -53,7 +53,7 @@
       DTS:ObjectName="Excel Connection Manager 2">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\test_excel.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\test_excel.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -63,7 +63,7 @@
       DTS:ObjectName="Excel Connection Manager 3">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\Car_data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\Car_data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -73,7 +73,7 @@
       DTS:ObjectName="Excel Connection Manager 4">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\test_excel.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\test_excel.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -83,7 +83,27 @@
       DTS:ObjectName="Excel Connection Manager 5">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\test_excel.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\test_excel.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C11EF32A-3C2D-4A2E-99F8-936BEAB1BE88}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\Car_data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 7]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5155886C-481F-45A2-89A5-7BB9EE3FD25E}"
+      DTS:ObjectName="Excel Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TYIT_A029_Aaditya_BI\EXCELS\Car_data.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -281,6 +301,131 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\SOURCE\Aggregate"
+              componentClassID="{5B201335-B360-485C-BB93-75C34E09B3D3}"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Aggregate"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\SOURCE\Aggregate.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SOURCE\Aggregate.Inputs[Aggregate Input 1].Columns[BRAND]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="BRAND"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[BRAND]" />
+                    <inputColumn
+                      refId="Package\SOURCE\Aggregate.Inputs[Aggregate Input 1].Columns[CAR_NAME]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CAR_NAME"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[CAR_NAME]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1].Columns[BRAND]"
+                      dataType="ui8"
+                      lineageId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1].Columns[BRAND]"
+                      name="BRAND">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[BRAND]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1].Columns[CAR_NAME]"
+                      dataType="ui8"
+                      lineageId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1].Columns[CAR_NAME]"
+                      name="CAR_NAME">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[CAR_NAME]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\SOURCE\Excel Destination"
               componentClassID="{1F5D5712-2FBA-4CB9-A95A-86C1F336E1DA}"
@@ -540,6 +685,132 @@
               </outputs>
             </component>
             <component
+              refId="Package\SOURCE\Excel Destination 2"
+              componentClassID="{1F5D5712-2FBA-4CB9-A95A-86C1F336E1DA}"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Excel Destination 2"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">'Aggregated data transformation$'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SOURCE\Excel Destination 2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].Columns[BRAND]"
+                      cachedDataType="ui8"
+                      cachedName="BRAND"
+                      externalMetadataColumnId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].ExternalColumns[brand]"
+                      lineageId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1].Columns[BRAND]" />
+                    <inputColumn
+                      refId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].Columns[CAR_NAME]"
+                      cachedDataType="ui8"
+                      cachedName="CAR_NAME"
+                      externalMetadataColumnId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].ExternalColumns[car_name]"
+                      lineageId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1].Columns[CAR_NAME]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].ExternalColumns[car_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="car_name" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].ExternalColumns[brand]"
+                      dataType="wstr"
+                      length="255"
+                      name="brand" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].ExternalColumns[hp]"
+                      dataType="wstr"
+                      length="255"
+                      name="hp" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input].ExternalColumns[top_speed]"
+                      dataType="wstr"
+                      length="255"
+                      name="top_speed" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SOURCE\Excel Destination 2.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Destination 2.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\Excel Destination 2.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Destination 2.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\Excel Destination 2.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\SOURCE\Excel Source"
               componentClassID="{8C084929-27D1-479F-9641-ABB7CDADF1AC}"
               contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -698,6 +969,322 @@
               </outputs>
             </component>
             <component
+              refId="Package\SOURCE\Excel Source 1"
+              componentClassID="{8C084929-27D1-479F-9641-ABB7CDADF1AC}"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source 1"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SOURCE\Excel Source 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 6]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[CAR_NAME]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[CAR_NAME]"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[CAR_NAME]"
+                      name="CAR_NAME"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[BRAND]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[BRAND]"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[BRAND]"
+                      name="BRAND"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[HP]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[HP]"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[HP]"
+                      name="HP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[TOP_SPEED]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[TOP_SPEED]"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[TOP_SPEED]"
+                      name="TOP_SPEED"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[CAR_NAME]"
+                      dataType="wstr"
+                      length="255"
+                      name="CAR_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[BRAND]"
+                      dataType="wstr"
+                      length="255"
+                      name="BRAND" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[HP]"
+                      dataType="r8"
+                      name="HP" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].ExternalColumns[TOP_SPEED]"
+                      dataType="r8"
+                      name="TOP_SPEED" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[CAR_NAME]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[CAR_NAME]"
+                      name="CAR_NAME" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[BRAND]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[BRAND]"
+                      name="BRAND" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[HP]"
+                      dataType="r8"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[HP]"
+                      name="HP" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[TOP_SPEED]"
+                      dataType="r8"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[TOP_SPEED]"
+                      name="TOP_SPEED" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SOURCE\Excel Source 2"
+              componentClassID="{8C084929-27D1-479F-9641-ABB7CDADF1AC}"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source 2"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SOURCE\Excel Source 2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 7]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 7]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[CAR_NAME]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[CAR_NAME]"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[CAR_NAME]"
+                      name="CAR_NAME"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[BRAND]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[BRAND]"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[BRAND]"
+                      name="BRAND"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[HP]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[HP]"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[HP]"
+                      name="HP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[TOP_SPEED]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[TOP_SPEED]"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].Columns[TOP_SPEED]"
+                      name="TOP_SPEED"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[CAR_NAME]"
+                      dataType="wstr"
+                      length="255"
+                      name="CAR_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[BRAND]"
+                      dataType="wstr"
+                      length="255"
+                      name="BRAND" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[HP]"
+                      dataType="r8"
+                      name="HP" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output].ExternalColumns[TOP_SPEED]"
+                      dataType="r8"
+                      name="TOP_SPEED" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[CAR_NAME]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[CAR_NAME]"
+                      name="CAR_NAME" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[BRAND]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[BRAND]"
+                      name="BRAND" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[HP]"
+                      dataType="r8"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[HP]"
+                      name="HP" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[TOP_SPEED]"
+                      dataType="r8"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[TOP_SPEED]"
+                      name="TOP_SPEED" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\SOURCE\Flat File Source"
               componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -816,13 +1403,175 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\SOURCE\OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[OLE DB Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SOURCE\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-D9DQURU.master]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-D9DQURU.master]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CAR_NAME]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CAR_NAME"
+                      externalMetadataColumnId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CAR_NAME]"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[CAR_NAME]" />
+                    <inputColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BRAND]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="BRAND"
+                      externalMetadataColumnId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BRAND]"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[BRAND]" />
+                    <inputColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HP]"
+                      cachedDataType="r8"
+                      cachedName="HP"
+                      externalMetadataColumnId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HP]"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[HP]" />
+                    <inputColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOP_SPEED]"
+                      cachedDataType="r8"
+                      cachedName="TOP_SPEED"
+                      externalMetadataColumnId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOP_SPEED]"
+                      lineageId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output].Columns[TOP_SPEED]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CAR_NAME]"
+                      dataType="wstr"
+                      length="255"
+                      name="CAR_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BRAND]"
+                      dataType="wstr"
+                      length="255"
+                      name="BRAND" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HP]"
+                      dataType="r8"
+                      name="HP" />
+                    <externalMetadataColumn
+                      refId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOP_SPEED]"
+                      dataType="r8"
+                      name="TOP_SPEED" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SOURCE\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SOURCE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SOURCE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SOURCE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
+            <path
+              refId="Package\SOURCE.Paths[Aggregate Output 1]"
+              endId="Package\SOURCE\Excel Destination 2.Inputs[Excel Destination Input]"
+              name="Aggregate Output 1"
+              startId="Package\SOURCE\Aggregate.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\SOURCE.Paths[Excel Source Output2]"
+              endId="Package\SOURCE\Aggregate.Inputs[Aggregate Input 1]"
+              name="Excel Source Output"
+              startId="Package\SOURCE\Excel Source 2.Outputs[Excel Source Output]" />
             <path
               refId="Package\SOURCE.Paths[Excel Source Output]"
               endId="Package\SOURCE\Excel Destination.Inputs[Excel Destination Input]"
               name="Excel Source Output"
               startId="Package\SOURCE\Excel Source.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\SOURCE.Paths[Excel Source Output1]"
+              endId="Package\SOURCE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\SOURCE\Excel Source 1.Outputs[Excel Source Output]" />
             <path
               refId="Package\SOURCE.Paths[Flat File Source Output]"
               endId="Package\SOURCE\Excel Destination 1.Inputs[Excel Destination Input]"
@@ -846,13 +1595,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="118,42"
-          Id="Package\SOURCE"
-          TopLeft="109,148" />
-        <NodeLayout
           Size="147,42"
           Id="Package\DESTINATION"
           TopLeft="347,151" />
+        <NodeLayout
+          Size="118,42"
+          Id="Package\SOURCE"
+          TopLeft="109,148" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -860,39 +1609,7 @@
     design-time-name="Package\SOURCE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="139,42"
-          Id="Package\SOURCE\Excel Source"
-          TopLeft="155,70" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\SOURCE\Excel Destination"
-          TopLeft="434.5,76.5" />
-        <EdgeLayout
-          Id="Package\SOURCE.Paths[Excel Source Output]"
-          TopLeft="294,94.25">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="140.5,0"
-              Start="0,0"
-              End="133,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="133,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="51.02443359375,5,30.9511328125,9.6025390625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\SOURCE\Flat File Source"
@@ -901,6 +1618,14 @@
           Size="169,42"
           Id="Package\SOURCE\Excel Destination 1"
           TopLeft="427.5,165.5" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\SOURCE\Excel Destination"
+          TopLeft="434.5,76.5" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\SOURCE\Excel Source"
+          TopLeft="155,70" />
         <EdgeLayout
           Id="Package\SOURCE.Paths[Flat File Source Output]"
           TopLeft="344,187.25">
@@ -920,16 +1645,122 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="22.44142578125,5,31.1171484375,9.421875"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SOURCE.Paths[Excel Source Output]"
+          TopLeft="294,94.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="140.5,0"
+              Start="0,0"
+              End="133,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="133,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="148,42"
+          Id="Package\SOURCE\Excel Source 1"
+          TopLeft="176.666666666667,294.444444444445" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\SOURCE\OLE DB Destination"
+          TopLeft="415.555555555556,295.555555555556" />
+        <EdgeLayout
+          Id="Package\SOURCE.Paths[Excel Source Output1]"
+          TopLeft="324.666666666667,316">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90.8888888888889,0"
+              Start="0,0"
+              End="83.3888888888889,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="83.3888888888889,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="148,42"
+          Id="Package\SOURCE\Excel Source 2"
+          TopLeft="153.333333333333,405.555555555556" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\SOURCE\Aggregate"
+          TopLeft="370,405.555555555556" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\SOURCE\Excel Destination 2"
+          TopLeft="591.111111111111,408.888888888889" />
+        <EdgeLayout
+          Id="Package\SOURCE.Paths[Excel Source Output2]"
+          TopLeft="301.333333333333,426.555555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="68.6666666666666,0"
+              Start="0,0"
+              End="61.1666666666666,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="61.1666666666666,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SOURCE.Paths[Aggregate Output 1]"
+          TopLeft="497,428.222222222222">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="94.1111111111112,0"
+              Start="0,0"
+              End="86.6111111111112,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="86.6111111111112,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\SOURCE\Excel Source">
+    design-time-name="Package\SOURCE\Excel Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -955,7 +1786,59 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\SOURCE\Excel Destination 1">
+    design-time-name="Package\SOURCE\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SOURCE\Excel Source 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SOURCE\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SOURCE\Excel Source 2">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SOURCE\Excel Destination 2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
