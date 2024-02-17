@@ -75,7 +75,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>srvPzev/Ava04HTloi3nd44nDCU=2/10/2024 9:39:14 AM2/10/2024 9:12:40 AM67uiLTDP6kDb1kl+cGaG8pwgpIU=2/10/2024 9:12:41 AM2/10/2024 9:12:41 AM</TimeStamp>
+        <TimeStamp>srvPzev/Ava04HTloi3nd44nDCU=2/10/2024 10:05:00 AM2/10/2024 9:12:40 AM67uiLTDP6kDb1kl+cGaG8pwgpIU=2/10/2024 9:12:41 AM2/10/2024 9:12:41 AM</TimeStamp>
         <ID>
           <String>Sales DW_TYIT_AADITYA_Cube</String>
         </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-02-10T04:09:18.96Z</LastDeployed>
+  <LastDeployed>2024-02-17T03:08:05.543333Z</LastDeployed>
 </DeploymentSnapshot>
