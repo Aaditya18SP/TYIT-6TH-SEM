@@ -1,0 +1,57 @@
+<Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <Parallel>
+    <Process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300">
+      <Object>
+        <DatabaseID>MultidimensionalProject1Vishalprathamesh</DatabaseID>
+        <CubeID>Sales DW</CubeID>
+      </Object>
+      <Type>ProcessFull</Type>
+      <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+    </Process>
+  </Parallel>
+</Batch>
+	Processing Dimension 'Dim Customer' completed.
+		Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute '(All)' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute 'Customer ID' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+	Processing Dimension 'Dim Product' completed.
+		Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute '(All)' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute 'Product Name' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+	Processing Dimension 'Dim Sales Person' completed.
+		Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+	Processing Dimension 'Dim Stores' completed.
+		Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute '(All)' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute 'Store ID' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+	Processing Dimension 'Dim Time' completed.
+		Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute '(All)' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+		Processing Dimension Attribute 'Time Key' completed.
+			Start time: 2/8/2023 9:31:35 AM; End time: 2/8/2023 9:31:35 AM; Duration: 0:00:00
+Errors and Warnings from Response
+	Server: The current operation was cancelled because another operation in the transaction failed.
+	OLE DB error: OLE DB or ODBC error: Login failed for user 'NT Service\MSSQLServerOLAPService'.; 28000.
+	Errors in the high-level relational engine. A connection could not be made to the data source with the DataSourceID of 'Sales DW', Name of 'Sales DW'.
+	Errors in the OLAP storage engine: An error occurred while the dimension, with the ID of 'Dim Customer', Name of 'Dim Customer' was being processed.
+	Errors in the OLAP storage engine: An error occurred while the 'Customer ID' attribute of the 'Dim Customer' dimension from the 'MultidimensionalProject1Vishalprathamesh' database was being processed.
+	Internal error: The operation terminated unsuccessfully.
+	OLE DB error: OLE DB or ODBC error: Login failed for user 'NT Service\MSSQLServerOLAPService'.; 28000.
+	Errors in the high-level relational engine. A connection could not be made to the data source with the DataSourceID of 'Sales DW', Name of 'Sales DW'.
+	Errors in the OLAP storage engine: An error occurred while the dimension, with the ID of 'Dim Product', Name of 'Dim Product' was being processed.
+	Errors in the OLAP storage engine: An error occurred while the 'Product Name' attribute of the 'Dim Product' dimension from the 'MultidimensionalProject1Vishalprathamesh' database was being processed.
+	OLE DB error: OLE DB or ODBC error: Login failed for user 'NT Service\MSSQLServerOLAPService'.; 28000.
+	Errors in the high-level relational engine. A connection could not be made to the data source with the DataSourceID of 'Sales DW', Name of 'Sales DW'.
+	Errors in the OLAP storage engine: An error occurred while the dimension, with the ID of 'Dim Time', Name of 'Dim Time' was being processed.
+	Errors in the OLAP storage engine: An error occurred while the 'Time Key' attribute of the 'Dim Time' dimension from the 'MultidimensionalProject1Vishalprathamesh' database was being processed.
+	OLE DB error: OLE DB or ODBC error: Login failed for user 'NT Service\MSSQLServerOLAPService'.; 28000.
+	Errors in the high-level relational engine. A connection could not be made to the data source with the DataSourceID of 'Sales DW', Name of 'Sales DW'.
+	Errors in the OLAP storage engine: An error occurred while the dimension, with the ID of 'Dim Stores', Name of 'Dim Stores' was being processed.
+	Errors in the OLAP storage engine: An error occurred while the 'Store ID' attribute of the 'Dim Stores' dimension from the 'MultidimensionalProject1Vishalprathamesh' database was being processed.
