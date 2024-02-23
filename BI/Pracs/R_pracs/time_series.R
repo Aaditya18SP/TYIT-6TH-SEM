@@ -1,0 +1,8 @@
+rainfall<-c(799,1174.8,865.1,1334.6,635.4,918.5,685.5,998.6,784.2,985,882.8,1071) 
+rainfall.timeseries<-ts(rainfall,start=c(2012,1),frequency=12)
+print(rainfall.timeseries)
+png(file='D:\\A029_TYIT_Aaditya\\TYIT-6TH-SEM\\BI\\Pracs\\R_prac_output\\t_rainfall_3.png')
+plot(rainfall.timeseries)
+dev.off()
+plot(rainfall.timeseries)
+
