@@ -1,5 +1,6 @@
 newiris <- iris
 #print(newiris)
+<<<<<<< HEAD
 #remove the SPECIES column from the iris dataset
 newiris$Species <- NULL
 
@@ -21,3 +22,14 @@ centroid_colors<-c("red","black","darkgreen")
 points(kc$centers[,c("Sepal.Length","Sepal.Width")],col=centroid_colors,pch=8,cex=2)
 dev.off()
 #plot(newiris[c("Sepal.Length","Sepal.Width")],col=kc$cluster)
+=======
+newiris$Species <- NULL
+kc <-kmeans(newiris,3)
+print(kc)
+table(iris$Species,kc$cluster)
+plot(newiris[c("Sepal.Length","Sepal.Width")],col=kc$cluster)
+points(kc$centers[,c("Sepal.Length","Sepal.Width")],col=1:3,pch=8,cex=2)
+png(file='D:\\A029_TYIT_Aaditya\\TYIT-6TH-SEM\\BI\\Pracs\\R_prac_output\\clutering.png')
+dev.off()
+plot(newiris[c("Sepal.Length","Sepal.Width")],col=kc$cluster)
+>>>>>>> 767a5f9f9b76cf5f9d0912e6ab3ac5d21537cfac
