@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SQLServerPractical", "SQLServerPractical\SQLServerPractical.dwproj", "{2998731B-EB25-4B4D-97AD-CF47571885AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2998731B-EB25-4B4D-97AD-CF47571885AF}.Development|Default.ActiveCfg = Development
+		{2998731B-EB25-4B4D-97AD-CF47571885AF}.Development|Default.Build.0 = Development
+		{2998731B-EB25-4B4D-97AD-CF47571885AF}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

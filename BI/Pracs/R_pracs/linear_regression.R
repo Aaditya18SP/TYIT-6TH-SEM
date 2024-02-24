@@ -1,0 +1,15 @@
+#predictor/independent variable
+dev.off()
+height_independent<- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+#dependent variable
+weigth_dependent<-c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+relation<-lm(weigth_dependent~height_independent)
+print(relation)
+print(summary(relation))
+a<-data.frame(height_independent=c(170,200))
+result<-predict(relation,a)
+print(result)
+png(file='D:\\A029_TYIT_Aaditya\\TYIT-6TH-SEM\\BI\\Pracs\\R_prac_output\\linear_regreesion.png')
+plot(height_independent,weigth_dependent, abline(relation),main="Height and weight regression",xlab="height",ylab="weight",cex=2.3,pch=24)
+dev.off()
+plot(height_independent,weigth_dependent, abline(relation),main="Height and weight regression",xlab="height",ylab="weight",col="red",cex=1.3,pch=24)
