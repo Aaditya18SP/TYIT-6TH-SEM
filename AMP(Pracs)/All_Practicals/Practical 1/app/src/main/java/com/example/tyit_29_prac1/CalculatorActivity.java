@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.opengl.Visibility;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -17,7 +18,7 @@ import com.google.android.material.textview.MaterialTextView;
 
 import java.util.ArrayList;
 
-public class CalculatorActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class CalculatorActivity extends AppCompatActivity  {
 
     MaterialTextView mtvCalculate;
 
@@ -86,7 +87,18 @@ public class CalculatorActivity extends AppCompatActivity implements AdapterView
          */
 
         //when spinner/dropdown item is selected
-        spinnerOperator.setOnItemSelectedListener(this);
+        spinnerOperator.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                operatorSelected= parent.getItemAtPosition(position).toString();
+                Log.d("SPINNER","Value selected is"+operatorSelected);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         //when calculate button is clicked
         mbtn.setOnClickListener(new View.OnClickListener() {
@@ -94,25 +106,40 @@ public class CalculatorActivity extends AppCompatActivity implements AdapterView
             public void onClick(View v) {
                 double num1=0, num2=0;
                 //CHeck whether the fields are empty of not
-                if (metNum1.getText().toString() != null) {
-                    num1 = Double.valueOf(metNum1.getText().toString());
-                    metNum1.setError(null);
+                if (metNum1.getText()!= null) {
+                    if(!metNum1.getText().toString().isEmpty()){
+                        num1 = Double.valueOf(metNum1.getText().toString());
+                        metNum1.setError(null);
+                    }
+                    else{
+                        metNum1.setError("REQUIRED");
+                    }
+
+
                 } else {
                     metNum1.setError("REQUIRED");
                 }
 
-                if (metNum2.getText().toString() != null) {
-                    num2 = Double.valueOf(metNum2.getText().toString());
+                if (metNum2.getText() != null) {
+                    if(!metNum2.getText().toString().isEmpty()){
+                        num2 = Double.valueOf(metNum2.getText().toString());
+                        metNum2.setError(null);
+                    }
+                    else {
+                        metNum2.setError("REQUIRED");
+
+                    }
+
                 } else {
                     metNum2.setError("REQUIRED");
-                    metNum2.setError(null);
+
                 }
-                if (tilNum1.getError().toString() == null && tilNum2.getError().toString() == null) {
+                if (tilNum1.getError() == null && tilNum2.getError() == null) {
                     double result=0;
                     // display the result
                     switch (operatorSelected) {
                         case "+":
-                            result = num1 + num2;
+                            result=num1+num2;
                             break;
                         case "-":
                             result = num1 - num2;
@@ -135,20 +162,6 @@ public class CalculatorActivity extends AppCompatActivity implements AdapterView
         });
     }
 
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        operatorSelected= parent.getItemAtPosition(position).toString();
-        Toast.makeText(getApplicationContext(), operatorSelected,Toast.LENGTH_SHORT).show();
-
-
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-        operatorSelected="+";
-
-    }
 
     //FUNCTIONS
 
