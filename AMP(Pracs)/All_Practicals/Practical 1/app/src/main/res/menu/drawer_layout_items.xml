@@ -3,27 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/Calc"
+        android:id="@+id/menuCalc"
         android:title="Calculator"
-        app:showAsAction="always"
         />
 
     <item
-        android:id="@+id/Prac1"
+        android:id="@+id/menuPrac1"
         android:title="Prac1"
-        app:showAsAction="always"
+
         />
 
     <item
-        android:id="@+id/Prac2"
+        android:id="@+id/menuPrac2"
         android:title="Calculator"
-        app:showAsAction="always"
+
         />
 
     <item
-        android:id="@+id/Prac3"
+        android:id="@+id/menuPrac3"
         android:title="Calculator"
-        app:showAsAction="always"
+
         />
 
 </menu>

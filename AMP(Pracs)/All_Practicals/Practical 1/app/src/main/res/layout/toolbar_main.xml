@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
     
     <com.google.android.material.appbar.AppBarLayout
@@ -14,7 +13,8 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/tbMain"
+            android:id="@+id/mtbMain"
+
             />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -24,10 +24,14 @@
         android:orientation="vertical"
         >
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/frameLayoutMain"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:textAlignment="center"
+
+          android:text="ANDROID SEM 6 PRACTICALS"
+          />
     </LinearLayout>
 
 </LinearLayout>

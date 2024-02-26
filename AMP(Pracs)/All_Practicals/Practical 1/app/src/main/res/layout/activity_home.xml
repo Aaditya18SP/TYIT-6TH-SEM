@@ -6,16 +6,17 @@
     android:id="@+id/dlHomeActivity"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".HomeActivity"
-    android:fitsSystemWindows="true"
     tools:openDrawer="start"
     >
-<include layout="@layout/toolbar_main"/>
+<include layout="@layout/toolbar_main" android:layout_height="match_parent" android:layout_width="match_parent"/>
 
     <com.google.android.material.navigation.NavigationView
-       android:layout_width="wrap_content"
+       android:layout_width="300dp"
         android:layout_height="match_parent"
         app:menu="@menu/drawer_layout_items"
         android:layout_gravity="start"
+        android:id="@+id/navView"
+        android:fitsSystemWindows="true"
 
         />
 </androidx.drawerlayout.widget.DrawerLayout>
