@@ -49,6 +49,11 @@ setSupportActionBar(toolbar);
                     Intent intent= new Intent(HomeActivity.this, CalculatorActivity.class);
                     startActivity(intent);
                 }
+                else if(itemId==R.id.menuPrac4){
+                    Intent intentToPrac4 =new Intent(HomeActivity.this,Prac4Activity.class);
+                    finish();
+                    startActivity(intentToPrac4);
+                }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 

@@ -8,21 +8,11 @@
         />
 
     <item
-        android:id="@+id/menuPrac1"
-        android:title="Prac1"
+        android:id="@+id/menuPrac4"
+        android:title="Prac4-Layouts"
 
         />
 
-    <item
-        android:id="@+id/menuPrac2"
-        android:title="Calculator"
 
-        />
-
-    <item
-        android:id="@+id/menuPrac3"
-        android:title="Calculator"
-
-        />
 
 </menu>

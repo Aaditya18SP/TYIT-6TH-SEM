@@ -1,3 +1,8 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_Margin">16dp</dimen>
+    <dimen name="default_AppBarSize">?attr/actionBarSize</dimen>
+    <dimen name="default_TextSize">40dp</dimen>
+    <dimen name="size_36dp">36dp</dimen>
+    <dimen name="textsize_30sp">30sp</dimen>
 </resources>

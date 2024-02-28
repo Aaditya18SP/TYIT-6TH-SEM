@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prac4Activity">
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/appBarPrac4"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tbPrac4"
+            app:title="Practical 4 -LAYOUTS"
+            />
+        
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbtnPrac4LinearLayout"
+       android:background="@color/custom_blue"
+        app:layout_constraintTop_toBottomOf="@id/appBarPrac4"
+        android:layout_marginTop="@dimen/default_Margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Linear Layout"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbtnPrac4RelativeLayout"
+        app:layout_constraintTop_toBottomOf="@id/mbtnPrac4LinearLayout"
+        android:layout_marginTop="@dimen/default_Margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Relative Layout"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbtnPrac4FrameLayout"
+        app:layout_constraintTop_toBottomOf="@id/mbtnPrac4RelativeLayout"
+        android:layout_marginTop="@dimen/default_Margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Frame Layout"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbtnPrac4AbsoluteLayout"
+        app:layout_constraintTop_toBottomOf="@id/mbtnPrac4FrameLayout"
+        android:layout_marginTop="@dimen/default_Margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Absolute Layout"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbtnPrac4CoordinatorLayout"
+        app:layout_constraintTop_toBottomOf="@id/mbtnPrac4AbsoluteLayout"
+        android:layout_marginTop="@dimen/default_Margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Coordinator Layout"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbtnPrac4TableLayout"
+        app:layout_constraintTop_toBottomOf="@id/mbtnPrac4CoordinatorLayout"
+        android:layout_marginTop="@dimen/default_Margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Table Layout"
+        />
+
+
+        
+        
+
+</androidx.constraintlayout.widget.ConstraintLayout>

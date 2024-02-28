@@ -45,4 +45,8 @@
     </string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    <string name="Calculate">Calculate</string>
+    <string name="num_2">num 2</string>
+    <string name="num_1">num 1</string>
+    <string name="Calculator">Calculator</string>
 </resources>

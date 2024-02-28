@@ -1,14 +1,16 @@
-package com.example.tyit_29_prac1;
+package com.example.tyit_29_prac1.Prac4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SignInActivity extends AppCompatActivity {
+import com.example.tyit_29_prac1.R;
+
+public class FrameLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_frame_layout);
     }
 }

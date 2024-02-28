@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prac4.RelativeLayoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvParentCenter"
+            android:text="CENTER TEXT"
+            android:layout_centerInParent="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTopOfCenter"
+            android:text="Top OF CENTER"
+           android:layout_above="@id/tvParentCenter"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="150dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBottomOfCenter"
+            android:text="Bottom center TEXT"
+        android:layout_below="@id/tvParentCenter"
+            android:layout_centerHorizontal="true"
+          android:layout_marginVertical="150dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLeftOfCenter"
+            android:text="LEFT OF CENTER TEXT"
+            android:layout_toRightOf="@id/tvParentCenter"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRightOfCenter"
+            android:text="RIGHT OF CENTER TEXT"
+           android:layout_toLeftOf="@id/tvParentCenter"
+            android:layout_centerVertical="true"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
