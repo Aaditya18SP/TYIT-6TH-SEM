@@ -1,0 +1,12 @@
+png(file='D:\\BSCIT\\TY\\6TH SEM\\TYIT-6TH-SEM\\Practical_Practice\\BI\\Prac9\\linear_regression.png')
+age<- c(21,22,23,24,25,26,27,28,29,30)
+weights<- c(65.76,57.89,67,98,45,67,90.89,78.89,8.78,106.78)
+relation<- lm(weights~age)
+summary(relation)
+#predict
+early_30s<-data.frame(age=c(31,32,33,34,35))
+prediction<-predict(relation, early_30s)
+print(prediction)
+plot(age,weights,abline(relation), main="AGE VS WEIGHT",col.main="red",col="darkgreen",pch=16, cex=2)
+dev.off()
+plot(age,weights,abline(relation), main="AGE VS WEIGHT",col.main="red",col="darkgreen",pch=16, cex=2)
