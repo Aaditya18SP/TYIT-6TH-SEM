@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/menuCalc"
-        android:title="Calculator"
-        />
+        android:title="Calculator" />
 
+    <item
+        android:id="@+id/menuPrac3"
+        android:title="Prac3 and 5 -LIfecycle and fragments"
+
+        />
     <item
         android:id="@+id/menuPrac4"
         android:title="Prac4-Layouts"
 
         />
 
+    <item
+        android:id="@+id/menuPrac6789"
+        android:title="Prac 6789- appbar, menu, dialog, event listeners,intent with data"
+
+        />
+
+    <item
+        android:id="@+id/menuPrac10Audio"
+        android:title="Prac 10- audio"
+
+        />
+    <item
+        android:id="@+id/menuPrac10Video"
+        android:title="Prac 10- video"
+
+        />
+
+    <item
+        android:id="@+id/menuPrac11Notification"
+        android:title="Prac 11- Local notifications and airplane mode"
+
+        />
 
 
 </menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_prac6789_info"
+        android:icon="@drawable/baseline_beach_access_24"
+        android:title="Info"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_prac6789_help"
+        android:icon="@drawable/baseline_beach_access_24"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_prac6789_contact"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Contact Us"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_prac6789_email"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Mail"
+        app:showAsAction="ifRoom" />
+
+</menu>

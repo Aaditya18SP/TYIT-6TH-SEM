@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prac3LifeCycle.ActivityAndFragmentsLifeCycle">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtnPrac3ToPrac4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALL USER"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtnShowDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW DIALOG"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mbtnPrac3ToPrac4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtnToggleFragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOGGLE FRAGMENT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mbtnShowDialog" />
+
+    <!--SPECIFY NAME AND LAYOUT TO LOAD THE DEFAULT FRAGMENT :-First Fragment-->
+    <!-- android:name="com.example.tyit_29_prac1.Prac3LifeCycle.Fragment1"
+        tools:layout="@layout/fragment_1"-->
+    <FrameLayout
+        android:id="@+id/fragmentHolder1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mbtnToggleFragments"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

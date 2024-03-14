@@ -1,17 +1,21 @@
 package com.example.tyit_29_prac1;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.Toast;
-import android.window.OnBackInvokedDispatcher;
-
+import com.example.tyit_29_prac1.Prac10.AudioActivity;
+import com.example.tyit_29_prac1.Prac10.VideoActivity;
+import com.example.tyit_29_prac1.Prac11.NotificationActivity;
+import com.example.tyit_29_prac1.Prac3LifeCycle.ActivityAndFragmentsLifeCycle;
+import com.example.tyit_29_prac1.Prac6_7_8_9.EnterDataActivity;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -49,10 +53,26 @@ setSupportActionBar(toolbar);
                     Intent intent= new Intent(HomeActivity.this, CalculatorActivity.class);
                     startActivity(intent);
                 }
-                else if(itemId==R.id.menuPrac4){
-                    Intent intentToPrac4 =new Intent(HomeActivity.this,Prac4Activity.class);
+                else if (itemId == R.id.menuPrac4) {
+                    Intent intentToPrac4 = new Intent(HomeActivity.this, Prac4Activity.class);
                     finish();
                     startActivity(intentToPrac4);
+                } else if (itemId == R.id.menuPrac3) {
+                    Intent toPrac3 = new Intent(HomeActivity.this, ActivityAndFragmentsLifeCycle.class);
+                    finish();
+                    startActivity(toPrac3);
+                } else if (itemId == R.id.menuPrac6789) {
+                    Intent toEnterDataActivity = new Intent(HomeActivity.this, EnterDataActivity.class);
+                    startActivity(toEnterDataActivity);
+                } else if (itemId == R.id.menuPrac10Audio) {
+                    Intent toAudioAct = new Intent(HomeActivity.this, AudioActivity.class);
+                    startActivity(toAudioAct);
+                } else if (itemId == R.id.menuPrac10Video) {
+                    Intent toVideoAct = new Intent(HomeActivity.this, VideoActivity.class);
+                    startActivity(toVideoAct);
+                } else if (itemId == R.id.menuPrac11Notification) {
+                    Intent toNotificationActivity = new Intent(HomeActivity.this, NotificationActivity.class);
+                    startActivity(toNotificationActivity);
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;

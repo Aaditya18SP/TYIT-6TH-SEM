@@ -49,4 +49,6 @@
     <string name="num_2">num 2</string>
     <string name="num_1">num 1</string>
     <string name="Calculator">Calculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

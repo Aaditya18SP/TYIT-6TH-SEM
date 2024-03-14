@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +18,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TYIT_29_Prac1"
         tools:targetApi="31">
+        <activity
+            android:name=".Prac11.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Prac10.AudioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Prac10.VideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Prac6_7_8_9.ReceiveDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Prac6_7_8_9.EnterDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Prac3LifeCycle.ActivityAndFragmentsLifeCycle"
+            android:exported="false" />
+        <activity
+            android:name=".Prac4Activity$ActivityAndFragmentLifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Prac4.GridViewActivity"
+            android:exported="false" />
         <activity
             android:name=".Prac4.ListViewActivity"
             android:exported="false" />

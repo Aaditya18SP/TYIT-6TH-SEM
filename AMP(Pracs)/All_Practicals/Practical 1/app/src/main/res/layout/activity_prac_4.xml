@@ -89,11 +89,25 @@
         android:layout_marginTop="@dimen/default_Margin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="Table Layout"
-        />
+        android:text="Table Layout" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtnListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mbtnPrac4TableLayout" />
 
-        
-        
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtnGridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mbtnListView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

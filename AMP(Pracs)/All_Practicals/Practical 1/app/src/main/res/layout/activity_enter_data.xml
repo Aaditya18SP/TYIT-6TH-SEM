@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Prac6_7_8_9.EnterDataActivity">
+
+    <!--TOOLBAR-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarPrac6789"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mtbPrac6789"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:subtitle="Subtitle"
+            app:title="PRAC 6,7,8,9- ALL IN ONE"
+
+
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--/////////////////////////////////  NAME ///////////////////////////////////////////////////////////-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarPrac6789" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!--/////////////////////////////////  AGE ///////////////////////////////////////////////////////////-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvAge">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:maxLength="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--/////////////////////////////////  COMMA SEPARATED KEYWORDS ///////////////////////////////////////////////////////////-->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Friends (Comma-separated)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilAge" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="eg: Adi, Pratik, Armu, Rushya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvFriends">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietFriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilFriends" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
