@@ -4,8 +4,10 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
@@ -43,6 +45,12 @@ public class NotificationActivity extends AppCompatActivity {
                         .setContentTitle("Notification from Aaditya").setSmallIcon(R.drawable.baseline_beach_access_24).setSubText("This is a subtext").setContentText("This is a context text").build();
                 manager.notify(NOTIFICATION_ID, notification);
 
+
+                if (Settings.System.getInt(getApplicationContext().getContentResolver(), Settings.Global.AIRPLANE_MODE_ON, 0) == 0) {
+                    Toast.makeText(getApplicationContext(), "Airplane mode Off", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Airplane mode On", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
