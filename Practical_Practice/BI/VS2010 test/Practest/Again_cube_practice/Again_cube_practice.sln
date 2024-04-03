@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Again_cube_practice", "Again_cube_practice\Again_cube_practice.dwproj", "{E0806429-53FC-46A9-82B0-CA846F32DC8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0806429-53FC-46A9-82B0-CA846F32DC8D}.Development|Default.ActiveCfg = Development
+		{E0806429-53FC-46A9-82B0-CA846F32DC8D}.Development|Default.Build.0 = Development
+		{E0806429-53FC-46A9-82B0-CA846F32DC8D}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
